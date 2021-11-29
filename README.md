@@ -36,10 +36,13 @@ You can select the simple color with the color wheel.
 
 # For advanced users
 
+[Youtube video on how to add to existing FX layer and customize gestures](https://youtu.be/Cx3EOIctzJ8)
+
+## Manual advanced setup
 - You can edit the GestureRight and GestureLeft layers to add your own animations to the generic hand gestures, they are currently empty.
 
 - You can look at the animation controller "QTMarkerFX" to see how the 3 layers are built.
 
-- If you wish to change the gestures used to draw or clear the drawings, you need to edit the QTMarkerInking layer of the animation controller by changing the conditions in the transition between "Any state" and "QTMarkerInking" or "QTMarkerClear". Don't forget to change the reverse conditions for "QTMarkerIdle". This is also useful if you want to switch it to be left handed. Just swap all the GestureRight for GestureLeft and vice-versa in this layer.
+- If you wish to change the gestures used to draw or clear the drawings, you need to edit the QTMarkerInking layer of the animation controller by changing the conditions in the transition between "Any state" and "QTMarkerInking" or "QTMarkerClear". Don't forget to change the reverse conditions for "QTMarkerIdle". This is also useful if you want to switch it to be left handed. Just swap all the GestureRight for GestureLeft and vice-versa in this layer. You also will want to place the QTMarkerPosition game object on the left hand.
 
 - If you want to add the marker system to an existing animation controller, you will need to rebuild the three layers (QTMarkerToggle, QTMarkerInking, QTMarkerColor) and add the QTMArker, QTMarkerIsColor, QTMarkerColorWheel parameters to your animation controller. Don't forget to setup your menu and parameters accordingly.
