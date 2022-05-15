@@ -8,14 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FlatColorTrail
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: LOD_FADE_CROSSFADE _ALPHABLEND_ON
+  m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: LOD_FADE_CROSSFADE _EMISSION
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - ALWAYS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -92,9 +93,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 02ea9f6d112aa4d4e994c27849a3e471, type: 3}
+        m_Scale: {x: 0.001, y: 0.001}
+        m_Offset: {x: 140.6, y: 0}
     - _DissolveDetailNoise:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -124,9 +125,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 02ea9f6d112aa4d4e994c27849a3e471, type: 3}
         m_Scale: {x: 0.0001, y: 0.0001}
-        m_Offset: {x: 0.53, y: 0}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap1:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -446,7 +447,7 @@ Material:
     - _ColorMask: 15
     - _ColorMode: 0
     - _ContinuousDissolve: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.5
     - _DebugCameraData: 0
     - _DebugEnabled: 0
@@ -496,7 +497,7 @@ Material:
     - _DistortionStrengthScaled: 0.1
     - _DitherGradient: 0.1
     - _DitheringEnabled: 1
-    - _DstBlend: 1
+    - _DstBlend: 0
     - _EmissionBaseColorAsMap: 0
     - _EmissionBaseColorAsMap1: 0
     - _EmissionBlinkingOffset: 0
@@ -505,7 +506,7 @@ Material:
     - _EmissionCenterOutEnabled1: 0
     - _EmissionCenterOutSpeed: 5
     - _EmissionCenterOutSpeed1: 5
-    - _EmissionEnabled: 0
+    - _EmissionEnabled: 1
     - _EmissionHueShift: 0
     - _EmissionHueShift1: 0
     - _EmissionHueShiftEnabled: 0
@@ -612,6 +613,7 @@ Material:
     - _HoloRimWidth: 0.5
     - _HoloScrollSpeed: 1
     - _IgnoreFog: 0
+    - _InvFade: 1
     - _InvertSmoothness: 0
     - _IridescenceAddBlend: 0
     - _IridescenceEmissionStrength: 0
@@ -632,7 +634,7 @@ Material:
     - _LightingAdditiveType: 1
     - _LightingDetailShadowsUV: 0
     - _LightingDetailStrength: 1
-    - _LightingEnabled: 1
+    - _LightingEnabled: 0
     - _LightingGradientEnd: 0.5
     - _LightingGradientStart: 0
     - _LightingIndirectContribution: 0.2
@@ -683,7 +685,7 @@ Material:
     - _MetallicTintMapUV: 0
     - _Mirror: 0
     - _MirrorTextureUV: 0
-    - _Mode: 4
+    - _Mode: 0
     - _ModelAngleMax: 90
     - _ModelAngleMin: 45
     - _OcclusionStrength: 1
@@ -799,7 +801,7 @@ Material:
     - _SpecularToonStart1: 0.95
     - _SpecularType: 1
     - _SpecularType1: 1
-    - _SrcBlend: 5
+    - _SrcBlend: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilCompareFunction: 8
@@ -810,7 +812,7 @@ Material:
     - _StencilRef: 0
     - _StencilWriteMask: 255
     - _StencilZFailOp: 0
-    - _Strength: 0.2
+    - _Strength: 0
     - _TextEnabled: 0
     - _TextFPSEmissionStrength: 0
     - _TextFPSEnabled: 0
@@ -859,7 +861,7 @@ Material:
     - _VoronoiType: 1
     - _ZBias: 0
     - _ZTest: 4
-    - _ZWrite: 0
+    - _ZWrite: 1
     - footer_discord: 0
     - footer_github: 0
     - footer_patreon: 0
@@ -1030,8 +1032,8 @@ Material:
     - _ClearCoatMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearCoatSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
     - _ClearCoatTint: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 0, b: 0.9333334, a: 1}
-    - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorAddSubDiff: {r: -1, g: 0, b: 0, a: 0}
     - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
     - _DecalMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _DecalPosition: {r: 0.5, g: 0.5, b: 0, a: 0}
@@ -1052,7 +1054,7 @@ Material:
     - _DissolveToTexturePan: {r: 0, g: 0, b: 0, a: 0}
     - _DistortionSpeed: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _DistortionSpeed1: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor1: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionMap1Pan: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionMapPan: {r: 0, g: 0, b: 0, a: 0}
