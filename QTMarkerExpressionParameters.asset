@@ -17,51 +17,64 @@ MonoBehaviour:
     valueType: 2
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: QTMarkerIsColor
     valueType: 2
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: QTMarkerColorWheel
     valueType: 1
     saved: 1
     defaultValue: 0
+    networkSynced: 1
+  - name: QTMarkerInking
+    valueType: 2
+    saved: 1
+    defaultValue: 0
+    networkSynced: 1
+  - name: QTMarkerClear
+    valueType: 2
+    saved: 0
+    defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
+    networkSynced: 1
   - name: 
     valueType: 0
     saved: 1
     defaultValue: 0
-  - name: 
-    valueType: 0
-    saved: 1
-    defaultValue: 0
-  - name: 
-    valueType: 0
-    saved: 1
-    defaultValue: 0
+    networkSynced: 1

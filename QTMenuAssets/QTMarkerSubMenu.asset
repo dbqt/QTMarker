@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: -340790334, guid: 67cc4cb7839cd3741b63733d5adf0442, type: 3}
   m_Name: QTMarkerSubMenu
   m_EditorClassIdentifier: 
+  Parameters: {fileID: 11400000, guid: 8483eb711e240c54bbbbd6ee638727ca, type: 2}
   controls:
   - name: Marker Toggle
     icon: {fileID: 0}
@@ -38,6 +39,28 @@ MonoBehaviour:
     type: 203
     parameter:
       name: 
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: QTMarkerColorWheel
+    labels: []
+  - name: Draw
+    icon: {fileID: 0}
+    type: 102
+    parameter:
+      name: QTMarkerInking
+    value: 1
+    style: 0
+    subMenu: {fileID: 0}
+    subParameters:
+    - name: QTMarkerColorWheel
+    labels: []
+  - name: Clear
+    icon: {fileID: 0}
+    type: 101
+    parameter:
+      name: QTMarkerClear
     value: 1
     style: 0
     subMenu: {fileID: 0}

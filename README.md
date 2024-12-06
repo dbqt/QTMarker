@@ -1,12 +1,13 @@
-# QTMarker
+# QTMarker v2.0.0
 Marker / Pen for VRChat Avatar SDK 3.0
 
-- Not Quest compatible.
+- [Modular Avatar compatible](https://modular-avatar.nadena.dev/).
 - Simple pen that can be toggled on or off with expressions.
 - Can be rainbow ink or any flat color, selectable with a color wheel.
-- Works on any avatar built with VRCAvatarSDK 3.0, works with vroid avatars and doesn't require a CATS converted avatar (but will work with CATS avatars).
+- Works on any avatar built with VRCAvatarSDK 3.0.
 - Visible in mirrors.
 - Simple setup.
+- Not Quest compatible.
 
 # Installation
 
@@ -17,13 +18,21 @@ Marker / Pen for VRChat Avatar SDK 3.0
  - Latest VRCAvatarSDK3.0
  - An avatar already setup and ready to be uploaded to VRChat
 
-## Simple setup for empty avatar (no existing FX layer)
+## Modular Avatar Setup (easiest)
+1. Ensure you have [Modular Avatar](https://modular-avatar.nadena.dev/) setup in your project.
+2. Get the latest version of the unity package [in the releases](https://github.com/dbqt/QTMarker/releases)
+3. Import into your Unity project
+4. Drag the prefab "QTMarker-ModularAvatar" into the root of your avatar.
+5. Optionally [customize where the menu is installed](https://modular-avatar.nadena.dev/docs/reference/menu-installer).
+6. That's it.
+
+## Setup for empty avatar (no existing FX layer)
 1. Get the latest version of the unity package [in the releases](https://github.com/dbqt/QTMarker/releases)
 2. Import into your Unity project
 3. Add the QTMarker prefab to the hierarchy and unpack it
 4. Move the QTMarkerPosition game object as the child of the bone you want to draw from, and align it(typically the tip of the right hand index finger)
 5. Move the QTMarker game object as the child of the avatar object, the parent of this should have the animation controller / VRCAvatarDescriptor
-6. On the QTMarker game object, on the ParentConstraint component, click on Zero and then Activate.
+6. On the QTMarker game object, on the VRC Parent Constraint component, click on Zero and then Activate.
 7. On the avatar's VRCAvatarDescriptor, replace the FX in the playable layers with QTMarkerFX (WD)
 8. On the avatar's VRCAvatarDescriptor, replace the Expressions Menu with QTMarkerExampleMenu asset
 9. On the avatar's VRCAvatarDescriptor, replace the Expressions Parameters with QTMarkerExampleParameters asset
@@ -35,7 +44,7 @@ Marker / Pen for VRChat Avatar SDK 3.0
 3. Add the QTMarker prefab to the hierarchy and unpack it
 4. Move the QTMarkerPosition game object as the child of the bone you want to draw from, and align it (typically the tip of the right hand index finger)
 5. Move the QTMarker game object as the child of the avatar object, the parent of this should have the animation controller / VRCAvatarDescriptor
-6. On the QTMarker game object, on the ParentConstraint component, click on Zero and then Activate.
+6. On the QTMarker game object, on the VRC Parent Constraint component, click on Zero and then Activate.
 7. Download and install the latest version of AV3Manager.unitypackage from [VRCLabs](https://github.com/VRLabs/VRChat-Avatars-3.0/releases)
 8. From the VRLabs menu, open the Avatars 3.0 Manager.
 9. Drag your VRC avatar descriptor into the panel.
@@ -49,9 +58,10 @@ Marker / Pen for VRChat Avatar SDK 3.0
 ## Basic usage
 To draw, toggle on from the expressions menu the "Marker Toggle". 
 Use the fist gesture on the left and and fingerpoint gesture with the right hand to draw.
-Use the fist gesture on both hands to delete.
-You can use a simple color instead of rainbow by using the "Use simple color" toggle.
-You can select the simple color with the color wheel.
+You can draw without the gestures by turning on the "Draw" toggle in the expression menu.
+You can clear by selecting the "Clear" button in the expression menu.
+You can use a simple color instead of rainbow by using the "Use simple color" toggle in the expression menu.
+You can select the simple color with the color wheel in the expression menu.
 
 # For advanced users
 
